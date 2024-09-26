@@ -61,12 +61,12 @@ const Content_ : FC<{beers: any[]}> = ({beers}) => {
     );
 
     return (
-        <Flex flexDirection="row" sx="height: 100vh">
+        <Flex flexDirection="row" sx={{ height: "100vh" }}>
             <Flex sx={{ flex: 1 }}>
                 &nbsp;
             </Flex>
             <Flex flexDirection="column" sx={{ flex: 6, height: "100%" }}>
-                <Flex direction="row" sx={{ flex: 1, gap: 3 }}>
+                <Flex sx={{ flex: 1, flexDirection: "row", gap: 3 }}>
                     <Typography variant="h1">
                         Bonner Brauschau
                     </Typography>
@@ -122,7 +122,7 @@ const Content_ : FC<{beers: any[]}> = ({beers}) => {
                         </Stack>
                     ))}
                 </Flex>
-                <Flex direction="row" sx={{ flex: 1, gap: 6 }}>
+                <Flex sx={{ flex: 1, flexDirection: "row", gap: 6 }}>
                     <Typography variant="h1">
                         Lieber aufm Handy?
                     </Typography>
