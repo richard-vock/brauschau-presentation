@@ -110,7 +110,7 @@ const Content_ : FC<{beers: any[]}> = ({beers}) => {
                                                 {beer.name}
                                             </Typography>
                                             <Stack direction="row" gap={1}>
-                                            <Typography variant="h3" sx={{ paddingLeft: "0.3em" }}>von</Typography>
+                                            <Typography variant="h3" sx={{ paddingLeft: "0.1em" }}>von</Typography>
                                             <Typography variant="h3" sx={{ color: primary }}>
                                                 {beer.user}
                                             </Typography>
