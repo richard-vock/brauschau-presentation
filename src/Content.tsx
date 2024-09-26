@@ -10,8 +10,22 @@ import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-import { CenteredFlexBox, Flex, FullSizeCenteredFlexBox } from '@/components/styled';
+import { CenteredFlexBox, Flex, FullSizeCenteredFlexBox, Logo } from '@/components/styled';
 import verticalLoop from '@/utils/verticalLoop';
+
+import gsiLogo from '@/logos/gsi.png';
+import gbcuLogo from '@/logos/gbcu.png';
+import mashcampLogo from '@/logos/mashcamp.png';
+import alemaniaLogo from '@/logos/alemania.jpg';
+import hdwLogo from '@/logos/hdw.svg';
+import cccLogo from '@/logos/ccc.png';
+import reschLogo from '@/logos/resch.svg';
+import biertastingLogo from '@/logos/biertasting.svg';
+import brauwerkstattLogo from '@/logos/brauwerkstatt.jpg';
+import heinenhofLogo from '@/logos/heinenhof.webp';
+import braubeboLogo from '@/logos/braubebo.png';
+import braupartnerLogo from '@/logos/braupartner.png';
+import beerolutionLogo from '@/logos/beerolution.jpg';
 
 import useTheme from '@/store/theme';
 import useDB from '@/hooks/useDB';
@@ -62,11 +76,16 @@ const Content_ : FC<{beers: any[]}> = ({beers}) => {
 
     return (
         <Flex flexDirection="row" sx={{ height: "100vh" }}>
-            <Flex sx={{ flex: 1 }}>
-                &nbsp;
+            <Flex sx={{ flex: 1, flexDirection: "column", justifyContent: "space-between", padding: "60px 20px", backgroundColor: "white" }}>
+                <Logo src={gsiLogo} />
+                <Logo src={gbcuLogo} />
+                <Logo src={mashcampLogo} />
+                <Logo src={cccLogo} />
+                <Logo src={reschLogo} />
+                <Logo src={heinenhofLogo} />
             </Flex>
-            <Flex flexDirection="column" sx={{ flex: 6, height: "100%" }}>
-                <Flex sx={{ flex: 1, flexDirection: "row", gap: 3 }}>
+            <Flex flexDirection="column" sx={{ flex: 9, height: "100%" }}>
+                <Flex sx={{ flex: 1, flexDirection: "row", gap: 3, backgroundColor: "white" }}>
                     <Typography variant="h1">
                         Bonner Brauschau
                     </Typography>
@@ -74,7 +93,7 @@ const Content_ : FC<{beers: any[]}> = ({beers}) => {
                         2024
                     </Typography>
                 </Flex>
-                <Flex flexDirection="column" sx={{ flex: 8, overflow: "hidden", boxShadow: "inset 1em 1em 1.4em 1.4em rgba(0, 0, 0, 0.1)" }} ref={ref} className="container">
+                <Flex flexDirection="column" sx={{ flex: 10, overflow: "hidden", boxShadow: "inset 1em 1em 1.4em 1.4em rgba(0, 0, 0, 0.1)" }} ref={ref} className="container">
                     {beers.map((beer) => (
                         <Stack key={beer.id} spacing={2} sx={{ padding: 2 }} className="beer">
                             <Stack>
@@ -122,17 +141,23 @@ const Content_ : FC<{beers: any[]}> = ({beers}) => {
                         </Stack>
                     ))}
                 </Flex>
-                <Flex sx={{ flex: 1, flexDirection: "row", gap: 6 }}>
-                    <Typography variant="h1">
-                        Lieber aufm Handy?
+                <Flex sx={{ flex: 1, flexDirection: "row", gap: 6, backgroundColor: "white", alignItems: "center" }}>
+                    <Typography variant="h2">
+                        Mich gibt's auch für's Handy:
                     </Typography>
-                    <Typography variant="h1" sx={{ color: primary }}>
+                    <Typography variant="h2" sx={{ color: primary }}>
                         app.bonner-brauschau.de
                     </Typography>
                 </Flex>
             </Flex>
-            <Flex sx={{ flex: 1 }}>
-                &nbsp;
+            <Flex sx={{ flex: 1, flexDirection: "column", justifyContent: "space-between", padding: "60px 20px", backgroundColor: "white" }}>
+                <Logo src={braubeboLogo} />
+                <Logo src={alemaniaLogo} />
+                <Logo src={biertastingLogo} />
+                <Logo src={brauwerkstattLogo} />
+                <Logo src={hdwLogo} />
+                <Logo src={braupartnerLogo} />
+                <Logo src={beerolutionLogo} />
             </Flex>
       </Flex>
   );

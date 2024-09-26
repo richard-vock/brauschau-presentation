@@ -15,4 +15,8 @@ const FullSizeCenteredFlexBox = styled(CenteredFlexBox)({
   height: '100%',
 });
 
-export { Flex, CenteredFlexBox, FullSizeCenteredFlexBox };
+const Logo = styled('img')({
+    width: '200px',
+});
+
+export { Flex, CenteredFlexBox, FullSizeCenteredFlexBox, Logo };
