@@ -11,6 +11,9 @@ dependencies:
   '@emotion/styled':
     specifier: ^11.11.0
     version: 11.13.0(@emotion/react@11.13.3)(@types/react@18.3.5)(react@18.3.1)
+  '@gsap/react':
+    specifier: ^2.1.1
+    version: 2.1.1
   '@instantdb/react':
     specifier: ^0.12.14
     version: 0.12.14(react@18.3.1)
@@ -29,6 +32,9 @@ dependencies:
   '@mui/utils':
     specifier: ^5.15.0
     version: 5.16.6(@types/react@18.3.5)(react@18.3.1)
+  gsap:
+    specifier: ^3.12.5
+    version: 3.12.5
   is-mobile:
     specifier: ^4.0.0
     version: 4.0.0
@@ -1845,6 +1851,13 @@ packages:
 
   /@floating-ui/utils@0.2.7:
     resolution: {integrity: sha512-X8R8Oj771YRl/w+c1HqAC1szL8zWQRwFvgDwT129k9ACdBoud/+/rX9V0qiMl6LWUdP9voC2nDVZYPMQQsb6eA==}
+    dev: false
+
+  /@gsap/react@2.1.1:
+    resolution: {integrity: sha512-apGPRrmpqxvl1T6Io1KgT8tFU+IuACI6z4zmT7t8+PASserJeLVRFJdSNUFA2Xb/eVkZI1noE8LIrY/w/oJECw==}
+    dependencies:
+      gsap: 3.12.5
+      react: 18.3.1
     dev: false
 
   /@humanwhocodes/config-array@0.11.14:
@@ -4156,6 +4169,10 @@ packages:
   /graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
+
+  /gsap@3.12.5:
+    resolution: {integrity: sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==}
+    dev: false
 
   /hamt_plus@1.0.2:
     resolution: {integrity: sha512-t2JXKaehnMb9paaYA7J0BX8QQAY8lwfQ9Gjf4pg/mk4krt+cmwmU652HOoWonf+7+EQV97ARPMhhVgU1ra2GhA==}

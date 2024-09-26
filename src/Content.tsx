@@ -122,9 +122,9 @@ const Content_ : FC<{beers: any[]}> = ({beers}) => {
                         </Stack>
                     ))}
                 </Flex>
-                <Flex direction="row" sx={{ flex: 1, gap: 3 }}>
+                <Flex direction="row" sx={{ flex: 1, gap: 6 }}>
                     <Typography variant="h1">
-                        mich gibt's auch als:
+                        Lieber aufm Handy?
                     </Typography>
                     <Typography variant="h1" sx={{ color: primary }}>
                         app.bonner-brauschau.de
