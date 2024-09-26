@@ -8,8 +8,8 @@ import type { Actions } from './types';
 
 const themeModeState = atom({
   key: 'theme-mode-state',
-  default: 'dark' as Themes,
-  effects: [synchronizeWithLocalStorage],
+  default: 'light' as Themes,
+  // effects: [synchronizeWithLocalStorage],
 });
 
 function synchronizeWithLocalStorage({ setSelf, onSet }: AtomEffectParams) {
