@@ -90,7 +90,7 @@ const Content_ : FC<{beers: any[]}> = ({beers}) => {
                         Bonner Brauschau
                     </Typography>
                     <Typography variant="h3" sx={{ color: primary }}>
-                        2024
+                        2025
                     </Typography>
                 </Flex>
                 <Flex flexDirection="column" sx={{ flex: 10, overflow: "hidden", boxShadow: "inset 1em 1em 1.4em 1.4em rgba(0, 0, 0, 0.1)" }} ref={ref} className="container">
