@@ -76,7 +76,7 @@ const Content_: FC<{ beers: any[] }> = ({ beers }) => {
 
 	return (
 		<Flex flexDirection="row" sx={{ height: "100vh" }}>
-			<Flex sx={{ flex: 1, flexDirection: "column", justifyContent: "space-between", padding: "20px 20px", backgroundColor: "white" }}>
+			<Flex sx={{ flex: 0, flexDirection: "column", justifyContent: "space-between", padding: "20px 20px", backgroundColor: "white" }}>
 				<Logo src={braumischungLogo} />
 				<Logo src={hbconLogo} />
 				<Logo src={fuchsLogo} />
@@ -84,8 +84,8 @@ const Content_: FC<{ beers: any[] }> = ({ beers }) => {
 				<Logo src={reschLogo} />
 				<Logo src={heinenhofLogo} />
 			</Flex>
-			<Flex flexDirection="column" sx={{ flex: 9, height: "100%" }}>
-				<Flex sx={{ flex: 1, flexDirection: "row", gap: 3, backgroundColor: "white", alignItems: "center", justifyContent: "space-between" }}>
+			<Flex flexDirection="column" sx={{ flex: 1, height: "100%" }}>
+				<Flex sx={{ flex: 0, flexDirection: "row", gap: 3, backgroundColor: "white", alignItems: "center", justifyContent: "space-between", padding: "20px 10px" }}>
 					<Flex sx={{ flex: 1, flexDirection: "row", gap: 3, backgroundColor: "white", alignItems: "center" }}>
 						<Typography variant="h3">
 							Bonner Brauschau
@@ -96,7 +96,7 @@ const Content_: FC<{ beers: any[] }> = ({ beers }) => {
 					</Flex>
 					<Logo src={gsiLogo} />
 				</Flex>
-				<Flex flexDirection="column" sx={{ flex: 10, overflow: "hidden", boxShadow: "inset 1em 1em 1.4em 1.4em rgba(0, 0, 0, 0.1)" }} ref={ref} className="container">
+				<Flex flexDirection="column" sx={{ flex: 1, overflow: "hidden", boxShadow: "inset 1em 1em 1.4em 1.4em rgba(0, 0, 0, 0.1)" }} ref={ref} className="container">
 					{beers.map((beer) => (
 						<Stack key={beer.id} spacing={2} sx={{ padding: 2 }} className="beer">
 							<Stack>
@@ -144,7 +144,7 @@ const Content_: FC<{ beers: any[] }> = ({ beers }) => {
 						</Stack>
 					))}
 				</Flex>
-				<Flex sx={{ flex: 1, flexDirection: "row", gap: 6, backgroundColor: "white", alignItems: "center" }}>
+				<Flex sx={{ flex: 0, flexDirection: "row", gap: 6, backgroundColor: "white", alignItems: "center", padding: "20px 10px" }}>
 					<Typography variant="h5">
 						Mich gibt's auch für's Handy:
 					</Typography>
@@ -153,7 +153,7 @@ const Content_: FC<{ beers: any[] }> = ({ beers }) => {
 					</Typography>
 				</Flex>
 			</Flex>
-			<Flex sx={{ flex: 1, flexDirection: "column", justifyContent: "space-between", padding: "20px 20px", backgroundColor: "white" }}>
+			<Flex sx={{ flex: 0, flexDirection: "column", justifyContent: "space-between", padding: "20px 20px", backgroundColor: "white" }}>
 				<Logo src={braubeboLogo} />
 				<Logo src={alemaniaLogo} />
 				<Logo src={biertastingLogo} />
