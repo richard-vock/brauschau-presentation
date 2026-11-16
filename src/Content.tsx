@@ -13,19 +13,26 @@ import Typography from '@mui/material/Typography';
 import { CenteredFlexBox, Flex, FullSizeCenteredFlexBox, Logo } from '@/components/styled';
 import verticalLoop from '@/utils/verticalLoop';
 
-import gsiLogo from '@/logos/gsi.png';
-import hbconLogo from '@/logos/hbcon.png';
-import fuchsLogo from '@/logos/bieranalyse_fuchs.png';
-import alemaniaLogo from '@/logos/plato_alemania.png';
-import hdwLogo from '@/logos/hdw.svg';
-import cccLogo from '@/logos/ccc.png';
-import reschLogo from '@/logos/resch.svg';
-import biertastingLogo from '@/logos/biertasting.svg';
-import brauwerkstattLogo from '@/logos/brauwerkstatt.jpg';
-import heinenhofLogo from '@/logos/heinenhof.webp';
-import braubeboLogo from '@/logos/braubebo.png';
-import braumischungLogo from '@/logos/braumischung.png';
-import beerolutionLogo from '@/logos/beerolution.jpg';
+import gsiLogo from '@/logos/2026/gsi_Logo_RGB.png';
+
+import braumischungLogo from '@/logos/2026/bbm_de-logo18_braun_pfade.png';
+import gbcuLogo from '@/logos/2026/GBCU loho.png';
+import brenneckeLogo from '@/logos/2026/2022-brennecke-logo-schwarz-300_150.jpg';
+import cccLogo from '@/logos/2026/CCC.png';
+import reschLogo from '@/logos/2026/logo resch svg.svg';
+import biersommelierLogo from '@/logos/2026/biersommelier hilbrandt.png';
+import braupartnerLogo from '@/logos/2026/Logo_Braupartner_Farbe.png';
+import braumarktLogo from '@/logos/2026/braumarkt.svg';
+import pfalzmalzLogo from '@/logos/2026/pfalzmalz.png';
+
+import braubeboLogo from '@/logos/2026/BrauBeBo Logo.png';
+import alemaniaLogo from '@/logos/2026/Plato_Ale Mania.png';
+import biertastingLogo from '@/logos/2026/Biertasting Bonn.png';
+import brauwerkstattLogo from '@/logos/2026/RZ_brauwerkstatt_logo.jpg';
+import hdwLogo from '@/logos/2026/HdW_Hipster_schwarz_seit2011.png';
+import beerolutionLogo from '@/logos/2026/beerolution_Logo_600-250x59.jpg';
+import holyCraftLogo from '@/logos/2026/Holy craft beer shop.jpg';
+import ireksLogo from '@/logos/2026/IREKS.png';
 
 import useTheme from '@/store/theme';
 import useDB from '@/hooks/useDB';
@@ -78,11 +85,14 @@ const Content_: FC<{ beers: any[] }> = ({ beers }) => {
 		<Flex flexDirection="row" sx={{ height: "100vh" }}>
 			<Flex sx={{ flex: 0, flexDirection: "column", justifyContent: "space-between", padding: "20px 20px", backgroundColor: "white" }}>
 				<Logo src={braumischungLogo} />
-				<Logo src={hbconLogo} />
-				<Logo src={fuchsLogo} />
+				<Logo src={gbcuLogo} />
+				<Logo src={brenneckeLogo} />
 				<Logo src={cccLogo} />
 				<Logo src={reschLogo} />
-				<Logo src={heinenhofLogo} />
+				<Logo src={biersommelierLogo} />
+				<Logo src={braupartnerLogo} />
+				<Logo src={braumarktLogo} />
+				<Logo src={pfalzmalzLogo} />
 			</Flex>
 			<Flex flexDirection="column" sx={{ flex: 1, height: "100%" }}>
 				<Flex sx={{ flex: 0, flexDirection: "row", gap: 3, backgroundColor: "white", alignItems: "center", justifyContent: "space-between", padding: "20px 10px" }}>
@@ -91,7 +101,7 @@ const Content_: FC<{ beers: any[] }> = ({ beers }) => {
 							Bonner Brauschau
 						</Typography>
 						<Typography variant="h3" sx={{ color: primary }}>
-							2025
+							2026
 						</Typography>
 					</Flex>
 					<Logo src={gsiLogo} />
@@ -160,6 +170,8 @@ const Content_: FC<{ beers: any[] }> = ({ beers }) => {
 				<Logo src={brauwerkstattLogo} />
 				<Logo src={hdwLogo} />
 				<Logo src={beerolutionLogo} />
+				<Logo src={holyCraftLogo} />
+				<Logo src={ireksLogo} />
 			</Flex>
 		</Flex>
 	);
